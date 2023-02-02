@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 0 .5px 0 .5px;
+
+}
+
+
+
+#top-section {
+    background: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+
+.section-title {
+    text-decoration: underline;
+    color: #3e9bff;
+}
+
+
+
+.search-box {
+    width: 50%;
+    position: relative;
+    top: 25%;
+    background-color: #ffffff8a;
+    border: 2px solid #69baf7c9;
+    border-radius: 10px;
+    left: 3%;
+
+}
+
+/* on Mobile Screen */
+@media only screen and (max-width: 768px) {
+    .search-box {
+        width: 90%;
+        position: absolute;
+        top: 42%;
+    }
+}
+
+/* cities section */
+.city {
+    margin: 0 5rem 0 5rem;
+}
+
+@media screen and (max-width:768px) {
+    .city {
+        margin: 0 1.5rem 0 1.5rem;
+    }
+}
+
+
+.card {
+    width: 100%;
+
+}
+
+.svs-img {
+    height: 20rem;
+}
+
+/*  Taxi Slider */
+
+.slider-wrapper {
+    padding: 1rem 4rem;
+    background-color: #f2f1f1;
+}
+
+
+.box {
+    width: 500px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 25px;
+}
+
+/* on mobile Scree */
+@media only screen and (max-width: 768px) {
+    .slider-wrapper {
+        padding: 0;
+    }
+
+    .box {
+        width: 300px;
+    }
+}
+
+.slide-img {
+    height: 300px;
+    position: relative;
+}
+
+.slide-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.detail-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-family: Calibri;
+}
+
+.type {
+    display: flex;
+    flex-direction: column;
+}
+
+.type a {
+    color: #1400ff;
+    margin: 5px 0px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding-right: 8px;
+    font-size: 1.5rem;
+}
+
+.type span {
+    color: rgba(26, 26, 0, .5);
+}
+
+.inquiry {
+    font-weight: 600;
+    font-size: 1.1rem;
+    font-family: poppins;
+    letter-spacing: 0.5px;
+}

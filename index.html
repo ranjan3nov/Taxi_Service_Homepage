@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bal Gopal  Taxi Services</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Fontawesome CDN-->
+    <script src="https://kit.fontawesome.com/288aceca52.js" crossorigin="anonymous"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- light-slider.css -->
+    <link rel="stylesheet" href="css/slider/lightslider.css">
+    <!-- jquery -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <!-- light slider js-->
+    <script type="text/javascript" src="js/slider/lightSlider.js"></script>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+        <a class="navbar-brand text-uppercase text-primary" href="#" >Bal Gopal  taxi services</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto d-flex">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Book Now</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Holiday Packages/offers</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact us</a>
+                </li>
+                <li class="nav-item">
+                    <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Login
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- navigation End -->
+
+    <!-- login modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal ENd -->
+
+    <!-- Search Section -->
+    <div class="container-fluid" width id="top-section">
+        <div class="search-box p-2 shadow-lg">
+            <h2 class="text-center text-capitalize text-danger" style="font-weight: bold;"><u> Book Taxi </u></h2>
+            <form>
+                <div class="form-row align-items-center">
+                    <div class="col-12 col-md-6 my-1 ">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="fa-solid fa-location-arrow"
+                                        style="color: #0e90f3;"></i></div>
+                            </div>
+                            <input type="text" class="form-control text-center" id="inlineFormInputGroupUsername"
+                                placeholder="From">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 my-1">
+                        <input type="text" class="form-control" id="inlineFormInputGroupUsername"
+                            placeholder="Calendar">
+                    </div>
+                </div>
+
+                <div class="form-row align-items-center">
+                    <div class="col-md-6 my-1 ">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"> <i class="fa-solid fa-location-dot"
+                                        style="color: #0e90f3;"></i></div>
+                            </div>
+                            <input type="text" class="form-control text-center" id="inlineFormInputName"
+                                placeholder="To">
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-1">
+                        <div class="input-group">
+                            <select class="form-control ">
+                                <option>Sedan</option>
+                                <option>SUV</option>
+                                <option>Mini</option>
+                                <option>Sharing</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row align-items-center">
+                    <div class="col-auto mx-auto ">
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Search Section End -->
+
+    <!-- cities Section -->
+    <section class="mt-2 city">
+        <div class="conatiner-fluid">
+            <div class="text-center text-uppercase p-3 section-title" style="font-size: 2rem;"> <strong>Popular Cities
+                    We service
+                </strong></div>
+            <div class="row mt-1">
+                <div class="col-md-4 col-12">
+                    <div class="card m-1">
+                        <img src="images/Agra.jpeg" class="card-img-top  svs-img " alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Agra</h5>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12">
+                    <div class="card m-1">
+                        <img src="images/Dehradun.jpeg" class="card-img-top svs-img " alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Dehradun</h5>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12">
+                    <div class="card m-1">
+                        <img src="images/delhi.jpg" class="card-img-top svs-img " alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Delhi</h5>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-md-4 col-12">
+                    <div class="card m-1">
+                        <img src="images/Agra.jpeg" class="card-img-top  svs-img " alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Agra</h5>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12">
+                    <div class="card m-1">
+                        <img src="images/Dehradun.jpeg" class="card-img-top svs-img " alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Dehradun</h5>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12">
+                    <div class="card m-1">
+                        <img src="images/delhi.jpg" class="card-img-top svs-img " alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Delhi</h5>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Services section end -->
+
+    <!-- Taxi SLider -->
+    <div class="slider-wrapper mt-2">
+        <!-- Title -->
+        <div class="text-center text-uppercase p-3 section-title" style="font-size: 2rem;"> <strong>Cars With rating
+            </strong></div>
+        <ul id="autoWidth" class="cs-hidden">
+            <!-- item 1--------->
+            <li class="item-a">
+                <!-- box slider -->
+                <div class="box">
+                    <!-- img box -->
+                    <div class="slide-img">
+                        <img src="https://static.autox.com/uploads/cars/2020/11/toyota-innova-crysta.jpg" alt="1">
+                    </div>
+                    <!-- detail box -->
+                    <div class="detail-box">
+                        <!-- type -->
+                        <div class="type">
+                            <a href="#">Innova Cryta</a>
+                            <span>6+1 seater</span>
+                        </div>
+                        <!-- inquiry -->
+                        <a class="inquiry"
+                            href="https://api.whatsapp.com/send?phone=919999999999&text=Hello, Bal Gopal  Taxi Services, "
+                            target="_blank ">
+                            <i class="fa-brands fa-whatsapp fa-2x text-success"></i>
+                        </a>
+                        <a class="inquiry" href="tel:9199999999"><i class="fa fa-phone " style="font-size: 1.5rem;"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </li>
+            <!-- item 2--------->
+            <li class="item-b">
+                <!-- box slider -->
+                <div class="box">
+                    <!-- img box -->
+                    <div class="slide-img">
+                        <img src="https://imgd.aeplcdn.com/1280x720/n/cw/ec/45691/marutisuzuki-dzire-right-front-three-quarter8.jpeg?q=75"
+                            alt="1">
+                    </div>
+                    <!-- detail box -->
+                    <div class="detail-box">
+                        <!-- type -->
+                        <div class="type">
+                            <a href="#">Swift Dezire</a>
+                            <span>4+1 seater</span>
+                        </div>
+                        <!-- inquiry -->
+                        <a class="inquiry"
+                            href="https://api.whatsapp.com/send?phone=919999999999&text=Hello, Bal Gopal  Taxi Services, "
+                            target="_blank ">
+                            <i class="fa-brands fa-whatsapp fa-2x text-success"></i>
+                        </a>
+                        <a class="inquiry" href="tel:9199999999"><i class="fa fa-phone " style="font-size: 1.5rem;"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </li>
+
+            <!-- item 3--------->
+            <li class="item-c">
+                <!-- box slider -->
+                <div class="box">
+                    <!-- img box -->
+                    <div class="slide-img">
+                        <img src="https://imgd.aeplcdn.com/664x374/n/vokh5ua_1559983.jpg?q=75" alt="1">
+                    </div>
+                    <!-- detail box -->
+                    <div class="detail-box">
+                        <!-- type -->
+                        <div class="type">
+                            <a href="#">Tata Harrier Suv</a>
+                            <span>6+1 seater</span>
+                        </div>
+                        <!-- inquiry -->
+                        <a class="inquiry"
+                            href="https://api.whatsapp.com/send?phone=919999999999&text=Hello, Bal Gopal  Taxi Services, "
+                            target="_blank ">
+                            <i class="fa-brands fa-whatsapp fa-2x text-success"></i>
+                        </a>
+                        <a class="inquiry" href="tel:9199999999"><i class="fa fa-phone " style="font-size: 1.5rem;"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </li>
+
+            <!-- item 4--------->
+
+            <li class="item-d">
+                <!-- box slider -->
+                <div class="box">
+                    <!-- img box -->
+                    <div class="slide-img">
+                        <img src="https://images.91wheels.com//assets/b_images/main/models/profile/profile1651212150.jpg?width=360"
+                            alt="1">
+                    </div>
+                    <!-- detail box -->
+                    <div class="detail-box">
+                        <!-- type -->
+                        <div class="type">
+                            <a href="#">Tempo Traveller</a>
+                            <span>26 seater</span>
+                        </div>
+                        <!-- inquiry -->
+                        <a class="inquiry"
+                            href="https://api.whatsapp.com/send?phone=919999999999&text=Hello, Bal Gopal  Taxi Services, "
+                            target="_blank ">
+                            <i class="fa-brands fa-whatsapp fa-2x text-success"></i>
+                        </a>
+                        <a class="inquiry" href="tel:9199999999"><i class="fa fa-phone " style="font-size: 1.5rem;"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </li>
+            <!-- item 5--------->
+            <li class="item-e">
+                <!-- box slider -->
+                <div class="box">
+                    <!-- img box -->
+                    <div class="slide-img">
+                        <img src="https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cms.haymarketindia.net/model/uploads/modelimages/Toyota-Fortuner-110120211829.jpg&w=872&h=578&q=75&c=1"
+                            alt="1">
+                    </div>
+                    <!-- detail box -->
+                    <div class="detail-box">
+                        <!-- type -->
+                        <div class="type">
+                            <a href="#">Fortuner</a>
+                            <span>5+1 seater</span>
+                        </div>
+                        <!-- inquiry -->
+                        <a class="inquiry"
+                            href="https://api.whatsapp.com/send?phone=919999999999&text=Hello, Bal Gopal  Taxi Services, "
+                            target="_blank ">
+                            <i class="fa-brands fa-whatsapp fa-2x text-success"></i>
+                        </a>
+                        <a class="inquiry" href="tel:9199999999"><i class="fa fa-phone " style="font-size: 1.5rem;"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </li>
+
+
+        </ul>
+    </div>
+    <!-- Slider Ends -->
+
+    <!-- Contact us Section -->
+    <div class="container mb-5">
+        <div class="text-center text-uppercase p-3 section-title" style="font-size: 2rem;">
+            <strong>Contact us </strong>
+        </div>
+        <div class="text-center text-uppercase text-info" style="font-size: 2rem;">
+            <strong>Bal Gopal  taxi service </strong>
+        </div>
+        <br>
+        <div class="row justify-content-around">
+            <div class="col-md-4 col-12 m-1 ">
+                <div class="card" style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center text-capitalize">head office</h5>
+                        <p class="card-text">
+                        <div class="row">
+                            <div class="col-12 text-center text-primary">
+                                <i class="fa-solid fa-map-location-dot fa-3x fs "> </i>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                Some quick example text to build on the card title and make up the bulk of
+                                the card's content.
+                            </div>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12 m-1 ">
+                <div class="card" style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Inquiry</h5>
+                        <p class="card-text">
+                        <div class="row">
+                            <div class="col-6 text-center">
+                                <!-- whatsapp -->
+                                <a href="https://api.whatsapp.com/send?phone=919999999999&text=Hello, Bal Gopal  Taxi Services, "
+                                    target="_blank ">
+                                    <i class="fa-brands  fa-whatsapp fa-3x text-success"></i>
+                                </a>
+                            </div>
+                            <div class="col-6 text-center">
+                                <!-- Call -->
+                                <a class="" href="tel:9199999999">
+                                    <i class="fa fa-phone fa-3x"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                Some quick example text to build on the card title and make up the bulk of
+                                the card's content.
+                            </div>
+                        </div>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Contact us section Ends -->
+
+    <!-- Separate Popper and Bootstrap JS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+
+    <!-- light slider js-->
+    <script type="text/javascript" src="js/slider/script.js"></script>
+</body>
+
+</html>
